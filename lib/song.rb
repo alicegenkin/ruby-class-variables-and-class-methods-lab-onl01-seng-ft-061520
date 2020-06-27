@@ -28,7 +28,8 @@ end
 
 def genre_count
   genre_count = Hash.new
-  @@genres.each  {|genre| genre_count[genre]+=1}
+  @@genres.each do |genre| genre_count[genre]+=1
+  end
     genre_count
 end
 end
