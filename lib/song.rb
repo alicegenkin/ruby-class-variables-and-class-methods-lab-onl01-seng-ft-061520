@@ -28,9 +28,7 @@ end
 
 def self.genre_count
   genre_count = Hash.new
-  @@genres.each do |genre|
-     genre_count[genre] += 1
-  end
+  @@genres.each {|genre| genre_count[genre] += 1}
     genre_count
 end
 end
